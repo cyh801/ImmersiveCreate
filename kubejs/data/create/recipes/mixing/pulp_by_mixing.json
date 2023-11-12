@@ -1,0 +1,23 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:sugar_cane",
+      "count": 3
+    },
+    {
+      "item": "immersiveengineering:dust_wood"
+    },
+    {
+      "fluid": "minecraft:water",
+      "nbt": {},
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:pulp",
+      "count": 2
+    }
+  ]
+}
