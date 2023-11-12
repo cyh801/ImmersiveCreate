@@ -1,0 +1,296 @@
+{
+	id: "4076A3749A8F0117"
+	group: ""
+	order_index: 4
+	filename: "4076A3749A8F0117"
+	title: "能源"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -8.5d
+			y: -1.0d
+			dependencies: ["157B2E932BCF6563"]
+			id: "642724F62943AC09"
+			tasks: [{
+				id: "094EFA2AEFF8A410"
+				type: "item"
+				item: "immersiveengineering:dynamo"
+			}]
+		}
+		{
+			x: -13.5d
+			y: -0.5d
+			dependencies: ["5F3789A828E82922"]
+			id: "37F2CA5185739AD0"
+			tasks: [{
+				id: "0DCE2A385196173E"
+				type: "item"
+				item: "minecraft:copper_ingot"
+			}]
+		}
+		{
+			x: -13.0d
+			y: 1.0d
+			dependencies: ["37F2CA5185739AD0"]
+			id: "1B3E1FBAE68DFFF0"
+			tasks: [{
+				id: "741248A7F32AAAD7"
+				type: "item"
+				item: "immersiveengineering:plate_copper"
+			}]
+		}
+		{
+			x: -11.5d
+			y: -0.5d
+			dependencies: ["1B3E1FBAE68DFFF0"]
+			id: "2016FCDC58BF8520"
+			tasks: [{
+				id: "4D4AD7047D18B9EE"
+				type: "item"
+				item: "immersiveengineering:wire_copper"
+			}]
+		}
+		{
+			x: -9.5d
+			y: 0.0d
+			dependencies: ["2016FCDC58BF8520"]
+			id: "157B2E932BCF6563"
+			tasks: [{
+				id: "64AA76C2AFA3341F"
+				type: "item"
+				item: "immersiveengineering:coil_lv"
+			}]
+		}
+		{
+			x: -10.5d
+			y: -2.0d
+			dependencies: ["5F3789A828E82922"]
+			id: "66137D981D7304C6"
+			tasks: [{
+				id: "32CC773BCA021C88"
+				type: "item"
+				item: "immersiveengineering:waterwheel_segment"
+				count: 4L
+			}]
+		}
+		{
+			x: -6.0d
+			y: -2.0d
+			dependencies: ["7351B5BAFAF3BC16"]
+			id: "200ACC10D0E2A97B"
+			tasks: [{
+				id: "31AA3EF45F4C8E2E"
+				type: "item"
+				item: "immersiveengineering:connector_lv"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -2.0d
+			id: "38382DFC24E74FF6"
+			tasks: [{
+				id: "51131F7A9F56A90F"
+				type: "item"
+				item: "immersiveengineering:connector_lv_relay"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -5.5d
+			id: "11367A609867F204"
+			tasks: [{
+				id: "579008B2549E5B4E"
+				type: "item"
+				item: "immersiveengineering:connector_mv"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -5.5d
+			id: "4B9FD01699BB3269"
+			tasks: [{
+				id: "2F96BB8DB22D15B4"
+				type: "item"
+				item: "immersiveengineering:connector_mv_relay"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -9.0d
+			id: "79D60883FB2347E7"
+			tasks: [{
+				id: "3759C1C83D252A63"
+				type: "item"
+				item: "immersiveengineering:connector_hv"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -9.0d
+			id: "0B0D7DB0FDA15662"
+			tasks: [{
+				id: "38E74642823F6ECC"
+				type: "item"
+				item: "immersiveengineering:connector_hv_relay"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -2.0d
+			id: "36F333039C5DFD20"
+			tasks: [{
+				id: "60818D7B4DD5DB23"
+				type: "item"
+				item: "immersiveengineering:treated_post"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -3.5d
+			id: "013BBF37D99E80E5"
+			tasks: [{
+				id: "027ABFE044BEFE8E"
+				type: "item"
+				item: "immersiveengineering:capacitor_lv"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -7.0d
+			id: "07533EB2110D84A2"
+			tasks: [{
+				id: "6748A5C31FFFE25C"
+				type: "item"
+				item: "immersiveengineering:capacitor_mv"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -11.0d
+			id: "36CFF1E4A0ADB47B"
+			tasks: [{
+				id: "1A6701369D5E0054"
+				type: "item"
+				item: "immersiveengineering:capacitor_hv"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -4.0d
+			id: "65DE5E82C237ED01"
+			tasks: [{
+				id: "26F85B7ED7EA32D3"
+				type: "item"
+				item: "immersiveengineering:transformer"
+			}]
+		}
+		{
+			x: -12.5d
+			y: -2.0d
+			dependencies: ["4C0BA6965794F867"]
+			id: "5F3789A828E82922"
+			tasks: [{
+				id: "1467095CD065550A"
+				type: "checkmark"
+				title: "是时候建造能源系统"
+			}]
+		}
+		{
+			title: "备用能源"
+			x: -11.5d
+			y: -4.0d
+			dependencies: ["5F3789A828E82922"]
+			optional: true
+			id: "6113904E191D194B"
+			tasks: [{
+				id: "1D04D4DDF65282E3"
+				type: "item"
+				item: "immersiveengineering:thermoelectric_generator"
+			}]
+		}
+		{
+			title: "利用发电机两边的方块/液体温差进行发电"
+			x: -11.5d
+			y: -5.5d
+			shape: "circle"
+			description: [
+				"热源非流体方块"
+				"铀块 2000K"
+				"岩浆块 1300K"
+				"热源非流体方块"
+				"蓝冰 200K"
+				"浮冰 240K"
+				"冰 273K"
+			]
+			dependencies: ["6113904E191D194B"]
+			hide: true
+			id: "67DC9BFE7C776C7A"
+			tasks: [{
+				id: "1B60A5E273AD429C"
+				type: "checkmark"
+				title: "发电公式：将温度差开方后除以二，但实际操作时由于损耗可能偏低。热源非流体方块（工程师手册中内容）：铀块 2000K岩浆块 1300K暮色森林：炽铁块 2500K热源（非工程师手册中内容）：核电工艺：等离子体10000K冷源非流体方块（工程师手册中内容）：蓝冰 200K浮冰 240K冰 273K冷源（非工程师手册中内容）：液氦4K"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -2.0d
+			id: "0AB3512EB8B8E47F"
+			tasks: [{
+				id: "382E7DA138AD7C91"
+				type: "item"
+				item: "immersiveengineering:electric_lantern"
+			}]
+		}
+		{
+			title: "机械动力用电驱动"
+			x: -6.5d
+			y: 0.0d
+			dependencies: ["7351B5BAFAF3BC16"]
+			id: "2DC6C76CB6CD8C52"
+			tasks: [{
+				id: "1BF251F2398FD673"
+				type: "item"
+				item: "createaddition:electric_motor"
+			}]
+		}
+		{
+			title: "永动机？！"
+			x: -6.5d
+			y: 2.0d
+			dependencies: ["2DC6C76CB6CD8C52"]
+			id: "075A129BC00489CF"
+			tasks: [{
+				id: "7C41B7B5A34DAC28"
+				type: "item"
+				item: "createaddition:alternator"
+			}]
+		}
+		{
+			x: -9.0d
+			y: -2.5d
+			dependencies: ["66137D981D7304C6"]
+			id: "75C5D3AAA8B9C1CD"
+			tasks: [{
+				id: "5C434900CCED4080"
+				type: "item"
+				item: "immersiveengineering:watermill"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -2.0d
+			dependencies: [
+				"75C5D3AAA8B9C1CD"
+				"642724F62943AC09"
+			]
+			progression_mode: "linear"
+			id: "7351B5BAFAF3BC16"
+			tasks: [{
+				id: "38315ABF2D167BC6"
+				type: "checkmark"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

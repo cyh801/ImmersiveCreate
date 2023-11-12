@@ -1,1 +1,975 @@
-
+{
+	id: "77EE7C025E630445"
+	group: ""
+	order_index: 1
+	filename: "wood_tech"
+	title: "木頭科技"
+	icon: "minecraft:oak_log"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "原木"
+			x: 1.0d
+			y: 0.0d
+			description: ["這會花點時間..."]
+			id: "775F56BEF4137CF6"
+			tasks: [{
+				id: "02FDE1A136965C17"
+				type: "item"
+				title: "原木"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "3024FE979DCB6FBF"
+					type: "item"
+					item: {
+						id: "minecraft:leather_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4CAB86F3A0E7404B"
+					type: "item"
+					item: {
+						id: "minecraft:leather_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "木材"
+			x: 1.0d
+			y: -2.0d
+			description: ["原木製成木板。"]
+			dependencies: ["775F56BEF4137CF6"]
+			id: "18D2109E7163C21A"
+			tasks: [{
+				id: "0D740EC6E365A87E"
+				type: "item"
+				title: "木板"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:planks"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "076D9E8C5F686054"
+					type: "item"
+					item: {
+						id: "minecraft:leather_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0AD1426BD17E9D39"
+					type: "item"
+					item: {
+						id: "minecraft:leather_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: -5.0d
+			description: ["木材製成木棒。"]
+			dependencies: ["18D2109E7163C21A"]
+			id: "4B91E965EA9969C5"
+			tasks: [{
+				id: "2E0AD168CE171BE2"
+				type: "item"
+				item: "minecraft:stick"
+			}]
+			rewards: [{
+				id: "0F82BA0B085D205A"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "碳"
+			x: 1.0d
+			y: 1.5d
+			description: ["更好的熔爐燃料。"]
+			dependencies: ["775F56BEF4137CF6"]
+			id: "5FB86A8B73F7D43F"
+			tasks: [{
+				id: "342B621C1488B8F0"
+				type: "item"
+				title: "碳"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:coals"
+					}
+				}
+			}]
+		}
+		{
+			title: "儲物箱"
+			x: -1.0d
+			y: -2.0d
+			description: ["更多儲物箱。"]
+			dependencies: ["18D2109E7163C21A"]
+			id: "3F16A69720BFB822"
+			tasks: [{
+				id: "2279A65144F4F4C4"
+				type: "item"
+				title: "Any #forge:chests/wooden"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:chests/wooden"
+					}
+				}
+			}]
+			rewards: [{
+				id: "20081FF7464B628F"
+				type: "item"
+				item: "minecraft:emerald"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 2.0d
+			description: [""]
+			id: "1F1983CB009FC9A5"
+			tasks: [{
+				id: "6804B87AAB01EB77"
+				type: "item"
+				item: "minecraft:clay_ball"
+				count: 8L
+			}]
+			rewards: [{
+				id: "1361FFA30001FA38"
+				type: "item"
+				item: "minecraft:clay_ball"
+				count: 30
+			}]
+		}
+		{
+			x: -4.0d
+			y: 3.0d
+			description: [
+				"製作红磚。"
+				""
+			]
+			dependencies: ["1F1983CB009FC9A5"]
+			id: "6A9C3AA9F40531A0"
+			tasks: [{
+				id: "7438AFC977AAEB7F"
+				type: "item"
+				item: "minecraft:brick"
+				count: 4L
+			}]
+			rewards: [{
+				id: "2E7337B57BA270B5"
+				type: "item"
+				item: "minecraft:emerald"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 5.0d
+			description: ["用來製作沉浸工程的多方塊結構。"]
+			dependencies: ["4B91E965EA9969C5"]
+			id: "578978E4F1F0CFC5"
+			tasks: [{
+				id: "20850957D6720B22"
+				type: "item"
+				item: {
+					id: "immersiveengineering:hammer"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "4D9710E88D19AECF"
+				type: "item"
+				item: "immersiveengineering:manual"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 7.0d
+			description: ["放置成 3x3x3 的多方塊結構並使用工程師錘子製成高爐。這能用來將某些方塊分解成特定的金屬粒。"]
+			dependencies: [
+				"578978E4F1F0CFC5"
+				"6D94392FCE6DA5BE"
+				"3889AFF0DD06468F"
+				"1A4733AB04B0891E"
+				"6A9C3AA9F40531A0"
+			]
+			invisible_until_tasks: 2
+			id: "2D1318EDA00ECA97"
+			tasks: [{
+				id: "244D4118CA470979"
+				type: "item"
+				item: "immersiveengineering:blastbrick"
+				count: 27L
+			}]
+		}
+		{
+			x: -1.5d
+			y: 3.0d
+			description: ["放置成 3x3x3 的多方塊結構並使用工程師槌子製成焦爐。"]
+			dependencies: [
+				"6A9C3AA9F40531A0"
+				"1F1983CB009FC9A5"
+				"111C23B959335AC7"
+				"578978E4F1F0CFC5"
+				"5FB86A8B73F7D43F"
+			]
+			id: "721697F5D7CD5AD6"
+			tasks: [{
+				id: "58C8D85F2C683051"
+				type: "item"
+				item: "immersiveengineering:cokebrick"
+				count: 27L
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			description: ["用雜酚油和木材製成。"]
+			dependencies: [
+				"18D2109E7163C21A"
+				"3562AAA2C3950634"
+			]
+			id: "0AAE6A63CAE81078"
+			tasks: [{
+				id: "741FED62899444F0"
+				type: "item"
+				item: "immersiveengineering:treated_wood_horizontal"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 0.0d
+			description: ["和藍圖一起使用製作物品。"]
+			dependencies: ["0AAE6A63CAE81078"]
+			id: "22D5A4A08E51547B"
+			tasks: [{
+				id: "1AA1ECBD7B356223"
+				type: "item"
+				item: "immersiveengineering:workbench"
+			}]
+		}
+		{
+			title: "砂岩"
+			icon: "minecraft:sandstone"
+			x: -2.0d
+			y: 1.0d
+			dependency_requirement: "all_started"
+			id: "111C23B959335AC7"
+			tasks: [{
+				id: "70264F12AC0EB993"
+				type: "item"
+				title: "砂岩"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:sandstone"
+					}
+				}
+			}]
+			rewards: [{
+				id: "21788180A0A7A4E2"
+				type: "item"
+				item: "minecraft:sand"
+				count: 12
+			}]
+		}
+		{
+			x: 2.0d
+			y: 3.0d
+			dependencies: ["721697F5D7CD5AD6"]
+			id: "4F0933E1DC3D0241"
+			tasks: [{
+				id: "6EF002A057E801F7"
+				type: "advancement"
+				advancement: "immersiveengineering:main/mb_cokeoven"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "64F998868324A1D9"
+				type: "item"
+				item: "minecraft:lantern"
+				count: 4
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.5d
+			dependencies: ["4F0933E1DC3D0241"]
+			id: "3562AAA2C3950634"
+			tasks: [{
+				id: "19E50DAA7851356E"
+				type: "item"
+				item: "immersiveengineering:creosote_bucket"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 8.5d
+			dependencies: [
+				"2D1318EDA00ECA97"
+				"6C82CF9B5EE822CA"
+			]
+			dependency_requirement: "all_started"
+			invisible: true
+			invisible_until_tasks: 2
+			id: "54E46DA60B5FB5EA"
+			tasks: [{
+				id: "343638AA445F0E6C"
+				type: "advancement"
+				advancement: "immersiveengineering:main/mb_blastfurnace"
+				criterion: ""
+			}]
+		}
+		{
+			x: 1.0d
+			y: 8.5d
+			dependencies: ["54E46DA60B5FB5EA"]
+			id: "03910553E6EB91B0"
+			tasks: [{
+				id: "07A73951DEAA2C98"
+				type: "item"
+				item: "immersiveengineering:ingot_steel"
+			}]
+			rewards: [{
+				id: "1AE12C7F1E042E96"
+				type: "item"
+				item: "immersiveengineering:ingot_steel"
+				count: 3
+			}]
+		}
+		{
+			title: "抽屉"
+			x: -2.5d
+			y: -2.0d
+			dependencies: ["3F16A69720BFB822"]
+			dependency_requirement: "all_started"
+			id: "0741AE2D86D97FC5"
+			tasks: [{
+				id: "236F695B65399021"
+				type: "item"
+				title: "抽屉"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "storagedrawers:drawers"
+					}
+				}
+			}]
+			rewards: [{
+				id: "17518439247A88F8"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -5.5d
+			y: -2.0d
+			dependencies: ["1F6BB10968E9634D"]
+			id: "067E48565D2128A2"
+			tasks: [{
+				id: "53FCB63667D1D672"
+				type: "item"
+				item: "storagedrawers:compacting_drawers_3"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -2.0d
+			dependencies: ["0741AE2D86D97FC5"]
+			id: "1F6BB10968E9634D"
+			tasks: [{
+				id: "358A8127AFCA3A4F"
+				type: "item"
+				item: "storagedrawers:controller"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -0.5d
+			dependencies: ["1F6BB10968E9634D"]
+			id: "3DB3C059EFE7E351"
+			tasks: [{
+				id: "531E73D5881971E6"
+				type: "item"
+				item: "storagedrawers:controller_slave"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -3.5d
+			dependencies: ["1F6BB10968E9634D"]
+			id: "2FC4320E1889FD83"
+			tasks: [{
+				id: "2768888E51A03160"
+				type: "item"
+				item: "storagedrawers:upgrade_template"
+			}]
+		}
+		{
+			x: -6.5d
+			y: -5.0d
+			dependencies: ["2FC4320E1889FD83"]
+			dependency_requirement: "one_completed"
+			id: "5D5500D27A8B27A9"
+			tasks: [
+				{
+					id: "025DDB0BACBED091"
+					type: "item"
+					item: "storagedrawers:obsidian_storage_upgrade"
+				}
+				{
+					id: "48038B279ED1329F"
+					type: "item"
+					item: "storagedrawers:iron_storage_upgrade"
+				}
+				{
+					id: "77D0BBA091C6AC2F"
+					type: "item"
+					item: "storagedrawers:gold_storage_upgrade"
+				}
+				{
+					id: "5A854E77BEBC5A4B"
+					type: "item"
+					item: "storagedrawers:diamond_storage_upgrade"
+				}
+				{
+					id: "4A4E6C3551F9B962"
+					type: "item"
+					item: "storagedrawers:emerald_storage_upgrade"
+				}
+			]
+		}
+		{
+			x: -5.0d
+			y: -5.0d
+			dependencies: ["2FC4320E1889FD83"]
+			id: "4C251D5BC5D64A28"
+			tasks: [{
+				id: "700B96D0F207C519"
+				type: "item"
+				item: "storagedrawers:one_stack_upgrade"
+			}]
+		}
+		{
+			x: -7.0d
+			y: -3.5d
+			dependencies: ["2FC4320E1889FD83"]
+			id: "55821F3443CB4344"
+			tasks: [{
+				id: "3B39144E55BAD765"
+				type: "item"
+				item: "storagedrawers:void_upgrade"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -3.5d
+			dependencies: ["1F6BB10968E9634D"]
+			id: "7FE1D483FBDCCBBD"
+			tasks: [{
+				id: "65BE18E2026214E6"
+				type: "item"
+				item: "storagedrawers:drawer_key"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -5.0d
+			dependencies: ["7FE1D483FBDCCBBD"]
+			id: "20EE9D645569A3CD"
+			tasks: [{
+				id: "3F74EFC0F6EF7C4F"
+				type: "item"
+				item: "storagedrawers:quantify_key"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -4.0d
+			dependencies: ["7FE1D483FBDCCBBD"]
+			id: "2147012F1FF3FB5B"
+			tasks: [{
+				id: "760ECC20A4C543B0"
+				type: "item"
+				item: "storagedrawers:shroud_key"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -7.0d
+			dependencies: ["4B91E965EA9969C5"]
+			invisible_until_tasks: 5
+			progression_mode: "linear"
+			id: "7563BC370FD550E5"
+			tasks: [
+				{
+					id: "1083060DEC498934"
+					type: "item"
+					item: {
+						id: "minecraft:wooden_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "440DAAC42CF49E6F"
+					type: "item"
+					item: {
+						id: "minecraft:wooden_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2D9168B287D55E53"
+					type: "item"
+					item: {
+						id: "minecraft:wooden_hoe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "250FBAFE7E37F0A9"
+					type: "item"
+					item: {
+						id: "minecraft:wooden_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "361DB5C1DF49691A"
+					type: "item"
+					item: {
+						id: "minecraft:wooden_shovel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 5.5d
+			y: -1.5d
+			hide_dependency_lines: false
+			dependencies: ["0AAE6A63CAE81078"]
+			id: "70FE99382BBBB36F"
+			tasks: [{
+				id: "68A40F2994D5993F"
+				type: "item"
+				item: "immersiveengineering:craftingtable"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 10.5d
+			dependencies: ["77758BC82A3AFD64"]
+			id: "6CA56B9515BAAE1E"
+			tasks: [{
+				id: "1E70FD94F49D98C5"
+				type: "item"
+				item: "minecraft:iron_ingot"
+			}]
+			rewards: [{
+				id: "760683BAF52CF9C9"
+				type: "item"
+				item: "minecraft:emerald"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 7.0d
+			dependencies: ["31758C7912B896FD"]
+			id: "6D94392FCE6DA5BE"
+			tasks: [{
+				id: "08C11630B6A1955B"
+				type: "advancement"
+				advancement: "minecraft:nether/root"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "395975136C727ECC"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -1.0d
+			y: -8.5d
+			id: "234FBC7DC9ABE314"
+			tasks: [{
+				id: "2728F911F915998D"
+				type: "item"
+				item: "immersiveengineering:seed"
+			}]
+		}
+		{
+			title: "工具与衣服无法用铁锭合成"
+			x: 3.0d
+			y: 10.5d
+			dependencies: ["6CA56B9515BAAE1E"]
+			id: "5E937EB07FB897A5"
+			tasks: [{
+				id: "4DE858A141A50308"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "钢的工具与衣服"
+			x: 3.0d
+			y: 8.5d
+			dependencies: [
+				"5E937EB07FB897A5"
+				"03910553E6EB91B0"
+			]
+			invisible: true
+			invisible_until_tasks: 2
+			id: "31E00410A8C3C974"
+			tasks: [
+				{
+					id: "62DE9B4F0F57175A"
+					type: "item"
+					item: {
+						id: "immersiveengineering:pickaxe_steel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4263C5782AC336B6"
+					type: "item"
+					item: {
+						id: "immersiveengineering:armor_steel_chest"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: 10.5d
+			subtitle: "加速加速"
+			dependencies: ["6CA56B9515BAAE1E"]
+			id: "6C82CF9B5EE822CA"
+			tasks: [{
+				id: "10AF7ABD95EEA18C"
+				type: "item"
+				item: "minecraft:blast_furnace"
+			}]
+			rewards: [{
+				id: "61914217EB2B9697"
+				type: "item"
+				item: "immersiveengineering:ingot_steel"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -8.5d
+			dependencies: ["234FBC7DC9ABE314"]
+			id: "603D3450297824F3"
+			tasks: [{
+				id: "0AC201FC1A2B87DF"
+				type: "item"
+				item: "immersiveengineering:hemp_fiber"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -8.5d
+			dependencies: ["603D3450297824F3"]
+			id: "18CF053E7106DE43"
+			tasks: [{
+				id: "65526730A4287B3F"
+				type: "item"
+				item: "immersiveengineering:hemp_fabric"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -8.5d
+			dependencies: ["18CF053E7106DE43"]
+			id: "2C1325BED888EFC2"
+			tasks: [{
+				id: "095E2B3C8C70D821"
+				type: "item"
+				item: "immersiveengineering:ersatz_leather"
+			}]
+		}
+		{
+			x: -7.5d
+			y: 7.0d
+			id: "70196CEA1573533C"
+			tasks: [{
+				id: "4253ED78C09D1EDE"
+				type: "item"
+				item: "waystones:waystone"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 13.0d
+			id: "77758BC82A3AFD64"
+			tasks: [{
+				id: "4C3828C0C011DAA0"
+				type: "item"
+				item: "minecraft:furnace"
+			}]
+			rewards: [{
+				id: "4D088B1CC7251969"
+				type: "item"
+				item: "farmersdelight:chicken_sandwich"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 12.5d
+			subtitle: "太消耗材料"
+			description: ["用高炉提炼钢粒 （不推荐）"]
+			dependencies: [
+				"6C82CF9B5EE822CA"
+				"48E8EE8329C51525"
+			]
+			invisible: true
+			invisible_until_tasks: 2
+			id: "378D32709C1D359C"
+			tasks: [{
+				id: "41E775D3BC0149E2"
+				type: "item"
+				item: "immersiveengineering:nugget_steel"
+			}]
+		}
+		{
+			title: "挖钻石的镐"
+			x: -5.0d
+			y: 10.5d
+			subtitle: "警告 错误使用后 只能"
+			description: [
+				""
+				"购买（快坏了）或制作一把（完好的）"
+			]
+			dependencies: ["6C82CF9B5EE822CA"]
+			id: "48E8EE8329C51525"
+			tasks: [
+				{
+					id: "23D443AC44E7B84F"
+					type: "item"
+					item: "immersiveengineering:ingot_steel"
+					consume_items: true
+				}
+				{
+					id: "698D315F03A8F026"
+					type: "item"
+					item: "minecraft:stick"
+					count: 2L
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "1C050E7C732AE0DD"
+				type: "item"
+				item: {
+					id: "immersiveengineering:pickaxe_steel"
+					Count: 1b
+					tag: {
+						Damage: 630
+					}
+				}
+			}]
+		}
+		{
+			title: "下界传送门"
+			x: -5.0d
+			y: 9.0d
+			description: ["建传送门"]
+			dependencies: ["54DEA2F5F82D7A7E"]
+			id: "31758C7912B896FD"
+			tasks: [{
+				id: "1B08141F5CE80F7D"
+				type: "item"
+				item: "minecraft:obsidian"
+				count: 10L
+			}]
+			rewards: [{
+				id: "44D40E387D66AA94"
+				type: "item"
+				item: {
+					id: "minecraft:flint_and_steel"
+					Count: 1b
+					tag: {
+						Damage: 63
+					}
+				}
+			}]
+		}
+		{
+			title: "帮你制作一把钻石镐"
+			x: -7.0d
+			y: 10.5d
+			subtitle: "下不为例"
+			dependencies: ["48E8EE8329C51525"]
+			id: "54DEA2F5F82D7A7E"
+			tasks: [
+				{
+					id: "2EF5FD18B86A56AE"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 3L
+					consume_items: true
+				}
+				{
+					id: "080CD334ECBD551A"
+					type: "item"
+					item: "minecraft:stick"
+					count: 2L
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "50ED7DC2CEB76035"
+				type: "item"
+				item: {
+					id: "minecraft:diamond_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -4.0d
+			y: 5.0d
+			dependencies: ["6D94392FCE6DA5BE"]
+			id: "3889AFF0DD06468F"
+			tasks: [{
+				id: "676494F7D92C1620"
+				type: "item"
+				item: "minecraft:netherrack"
+				count: 36L
+			}]
+			rewards: [{
+				id: "3B02571116F23F92"
+				type: "item"
+				item: {
+					id: "minecraft:golden_boots"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -3.5d
+			y: 8.0d
+			dependencies: ["6D94392FCE6DA5BE"]
+			id: "1A4733AB04B0891E"
+			tasks: [{
+				id: "3995CD7FE165C772"
+				type: "item"
+				item: "minecraft:magma_block"
+				count: 9L
+			}]
+		}
+		{
+			title: "合金窑"
+			icon: "immersiveengineering:alloy_smelter"
+			x: -4.5d
+			y: 0.5d
+			dependencies: [
+				"111C23B959335AC7"
+				"6A9C3AA9F40531A0"
+			]
+			id: "02D230B3168417DF"
+			tasks: [{
+				id: "7E3513B8E07630AC"
+				type: "item"
+				item: "immersiveengineering:alloybrick"
+				count: 8L
+			}]
+			rewards: [{
+				id: "2807D0A1837DFB17"
+				type: "item"
+				item: "minecraft:emerald"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 1.5d
+			dependencies: ["02D230B3168417DF"]
+			id: "6B5D011F32869E50"
+			tasks: [{
+				id: "249AB9FE0A700437"
+				type: "item"
+				item: "immersiveengineering:ingot_constantan"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -0.5d
+			dependencies: ["02D230B3168417DF"]
+			id: "67A69BB221F87FCA"
+			tasks: [{
+				id: "0EC8CB86FDE1519A"
+				type: "item"
+				item: "immersiveengineering:ingot_electrum"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

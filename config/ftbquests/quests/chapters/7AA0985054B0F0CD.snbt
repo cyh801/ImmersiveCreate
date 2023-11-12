@@ -1,0 +1,268 @@
+{
+	id: "7AA0985054B0F0CD"
+	group: ""
+	order_index: 5
+	filename: "7AA0985054B0F0CD"
+	title: "矿物自动化"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -4.0d
+			y: -0.5d
+			id: "07136CAB53039687"
+			tasks: [{
+				id: "5D878C2993E23FCD"
+				type: "item"
+				item: "create:andesite_alloy"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -2.0d
+			dependencies: ["07136CAB53039687"]
+			id: "57AB4AE1FD62F543"
+			tasks: [{
+				id: "0611A305E9FE547B"
+				type: "item"
+				item: "create:andesite_casing"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -2.0d
+			dependencies: ["57AB4AE1FD62F543"]
+			id: "492B0485BD7BCA29"
+			tasks: [{
+				id: "73C5E0316BB68D5E"
+				type: "item"
+				item: "create:shaft"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -2.0d
+			dependencies: ["492B0485BD7BCA29"]
+			id: "1658C871679D0D59"
+			tasks: [{
+				id: "4CF17178CA27BB2B"
+				type: "item"
+				item: "create:cogwheel"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -2.0d
+			dependencies: [
+				"4CF17178CA27BB2B"
+				"1658C871679D0D59"
+			]
+			id: "2F812CEC94238D97"
+			tasks: [{
+				id: "080F0B9DD1FF5CDF"
+				type: "item"
+				item: "create:large_cogwheel"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -3.5d
+			dependencies: ["1658C871679D0D59"]
+			id: "18335550F1D96880"
+			tasks: [{
+				id: "7358409CECAE058B"
+				type: "item"
+				item: "create:wrench"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -3.5d
+			dependencies: ["18335550F1D96880"]
+			id: "6F5E81BC6C788068"
+			tasks: [{
+				id: "22F8C18498360F07"
+				type: "item"
+				item: "create:millstone"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -3.5d
+			dependencies: ["1658C871679D0D59"]
+			id: "75A2166B8470690E"
+			tasks: [{
+				id: "5DB66219B9C34B56"
+				type: "item"
+				item: "create:mechanical_press"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -5.0d
+			dependencies: ["18335550F1D96880"]
+			id: "474912B3D759F4E9"
+			tasks: [{
+				id: "50403A2D1724E0D8"
+				type: "item"
+				item: "create:mechanical_mixer"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -0.5d
+			dependencies: ["1658C871679D0D59"]
+			id: "1F27DB28945B17EA"
+			tasks: [
+				{
+					id: "52A100B5EC293D32"
+					type: "item"
+					item: "create:gearbox"
+				}
+				{
+					id: "7E43C1799B8FC657"
+					type: "item"
+					item: "create:vertical_gearbox"
+				}
+			]
+		}
+		{
+			x: 2.5d
+			y: -5.0d
+			dependencies: ["474912B3D759F4E9"]
+			id: "040F20C6A8964013"
+			tasks: [{
+				id: "4B6A21D9FDA6FA18"
+				type: "item"
+				item: "create:basin"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -5.0d
+			dependencies: ["040F20C6A8964013"]
+			id: "7A76E4DF82E8651B"
+			tasks: [{
+				id: "575672982A084609"
+				type: "item"
+				item: "kubejs:pulp"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -5.0d
+			dependencies: ["7A76E4DF82E8651B"]
+			id: "3CD0BAA9BDA52724"
+			tasks: [{
+				id: "16BBCC2C2034C75C"
+				type: "item"
+				item: "minecraft:paper"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -6.5d
+			dependencies: ["040F20C6A8964013"]
+			id: "56A475AF1D8BB78C"
+			tasks: [{
+				id: "31C08A71C20260DE"
+				type: "item"
+				item: "create:asurine"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -6.5d
+			dependencies: ["56A475AF1D8BB78C"]
+			id: "1FCC32E9BEA664EA"
+			tasks: [{
+				id: "6BD7338E62324746"
+				type: "item"
+				item: "create:zinc_ingot"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -5.5d
+			dependencies: [
+				"02D230B3168417DF"
+				"18335550F1D96880"
+			]
+			id: "40A602E813596F32"
+			tasks: [{
+				id: "78D9D6EC181AD4BD"
+				type: "item"
+				item: "create:brass_ingot"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -7.0d
+			id: "5BE2567CC162825E"
+			tasks: [{
+				id: "023A3E83CEEA077B"
+				type: "item"
+				item: "create:brass_casing"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -5.5d
+			id: "0FAEF3EB1085F620"
+			tasks: [{
+				id: "614FCFE2550DAAC3"
+				type: "item"
+				item: "create:deployer"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -8.5d
+			id: "227ABB259BA2528A"
+			tasks: [{
+				id: "4BEEB5CD006BF344"
+				type: "item"
+				item: "create:mechanical_arm"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -5.5d
+			id: "755AF34A3BDD8AED"
+			tasks: [{
+				id: "1FA0AC2C0524F210"
+				type: "item"
+				item: "create:precision_mechanism"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -5.0d
+			dependencies: ["3CD0BAA9BDA52724"]
+			id: "02660B28A80C4685"
+			tasks: [{
+				id: "50BDBC4EABE2B2E3"
+				type: "item"
+				item: {
+					id: "create:sand_paper"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 9.0d
+			y: -5.0d
+			dependencies: ["02660B28A80C4685"]
+			id: "498F51D230CD3FA9"
+			tasks: [{
+				id: "745DAE92BAF44D00"
+				type: "item"
+				item: "create:polished_rose_quartz"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

@@ -1,0 +1,65 @@
+{
+	id: "13D2E6FF06875885"
+	group: ""
+	order_index: 0
+	filename: "13D2E6FF06875885"
+	title: "商店"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -3.0d
+			y: -3.0d
+			id: "15E8C79F345EE750"
+			tasks: [{
+				id: "254E7FAF413845E0"
+				type: "checkmark"
+				title: "商店"
+			}]
+			rewards: [{
+				id: "0B25CBA5C62F5C10"
+				type: "item"
+				item: "minecraft:emerald"
+			}]
+		}
+		{
+			title: "临时的镐"
+			x: -8.0d
+			y: -5.5d
+			description: [
+				""
+				""
+			]
+			dependencies: ["48E8EE8329C51525"]
+			can_repeat: true
+			id: "5BF07C84BA9A7A1C"
+			tasks: [
+				{
+					id: "0961CF50C110D0E3"
+					type: "item"
+					item: "immersiveengineering:ingot_steel"
+					consume_items: true
+				}
+				{
+					id: "4BFBE9B16BDEC13B"
+					type: "item"
+					item: "minecraft:stick"
+					count: 2L
+					consume_items: true
+				}
+			]
+			rewards: [{
+				id: "1D931E3E7CD68C6A"
+				type: "item"
+				item: {
+					id: "immersiveengineering:pickaxe_steel"
+					Count: 1b
+					tag: {
+						Damage: 620
+					}
+				}
+			}]
+		}
+	]
+	quest_links: [ ]
+}

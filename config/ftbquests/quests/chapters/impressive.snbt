@@ -1,0 +1,590 @@
+{
+	id: "317B3F7796B63185"
+	group: ""
+	order_index: 2
+	filename: "impressive"
+	title: "這會讓你印象深刻"
+	icon: "immersiveengineering:plate_steel"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "金屬沖壓機"
+			icon: "immersiveengineering:metal_press"
+			x: 4.0d
+			y: 4.5d
+			description: ["查看工程師手冊製作金屬沖壓機。"]
+			id: "42D9166BC33764C5"
+			tasks: [
+				{
+					id: "33AF2975696FB3E4"
+					type: "item"
+					item: "minecraft:piston"
+				}
+				{
+					id: "531B57D2D7394010"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 2L
+				}
+				{
+					id: "116B4250B2E249EB"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "3EF77226A43F41C0"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+				}
+				{
+					id: "6F844B762C2DB5DE"
+					type: "item"
+					item: "immersiveengineering:conveyor_basic"
+					count: 2L
+				}
+			]
+			rewards: [{
+				id: "1446C73F056231C1"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -2.5d
+			y: -5.5d
+			description: ["讓金屬沖壓機能製作板材。"]
+			dependencies: [
+				"6E06EE61665B21F8"
+				"5AD2737939D42400"
+			]
+			id: "71D3BDBB09F446F9"
+			tasks: [{
+				id: "2B8990D5208B892A"
+				type: "item"
+				item: "immersiveengineering:mold_plate"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -5.5d
+			description: ["讓金屬沖壓機能製作金屬桿。"]
+			dependencies: [
+				"5AD2737939D42400"
+				"6E06EE61665B21F8"
+			]
+			id: "5588E7AC48FD8CA9"
+			tasks: [{
+				id: "4A1A360365793839"
+				type: "item"
+				item: "immersiveengineering:mold_rod"
+			}]
+			rewards: [{
+				id: "100B1C7AADEC94A1"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -3.0d
+			description: ["用來剪東西。"]
+			dependencies: ["22D5A4A08E51547B"]
+			id: "656BFB0D4E5B9256"
+			tasks: [{
+				id: "1FAB7C7D419B7CDD"
+				type: "item"
+				item: {
+					id: "immersiveengineering:wirecutter"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: -3.0d
+			description: ["用金屬沖壓機製成。"]
+			dependencies: ["656BFB0D4E5B9256"]
+			id: "6E06EE61665B21F8"
+			tasks: [{
+				id: "3507CA91479E8E75"
+				type: "item"
+				item: "immersiveengineering:plate_steel"
+			}]
+			rewards: [{
+				id: "3D43161F82A88B96"
+				type: "item"
+				item: "immersiveengineering:ingot_steel"
+				count: 8
+			}]
+		}
+		{
+			x: 0.5d
+			y: -2.5d
+			description: ["用金屬沖壓機製成。"]
+			id: "4A0A2E5DAF6C28DC"
+			tasks: [{
+				id: "3C9FF1AECBA98BA5"
+				type: "item"
+				item: "immersiveengineering:plate_iron"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -1.5d
+			description: ["用鐵板製成。"]
+			dependencies: ["4A0A2E5DAF6C28DC"]
+			id: "77026B03A595301F"
+			tasks: [{
+				id: "73274967570BAE86"
+				type: "item"
+				item: "immersiveengineering:sheetmetal_iron"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.5d
+			description: ["用來傳輸流體。"]
+			dependencies: ["4A0A2E5DAF6C28DC"]
+			id: "70F9A1EF855C13DA"
+			tasks: [{
+				id: "1DA6547973607B68"
+				type: "item"
+				item: "immersiveengineering:fluid_pipe"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -5.5d
+			description: ["讓金屬沖壓機能製作線纜。"]
+			dependencies: [
+				"5AD2737939D42400"
+				"6E06EE61665B21F8"
+			]
+			id: "1CEF5E249A588AF2"
+			tasks: [{
+				id: "6405F4C14AB6F961"
+				type: "item"
+				item: "immersiveengineering:mold_wire"
+			}]
+		}
+		{
+			title: "鋸木機"
+			icon: "immersiveengineering:sawmill"
+			x: 2.5d
+			y: 1.5d
+			description: ["將原木切割成木材和鋸屑。"]
+			dependencies: ["041F78612D133ED6"]
+			id: "345D39CB5AE73A3F"
+			tasks: [
+				{
+					id: "1B9B5E33D91F2ED7"
+					type: "item"
+					item: "immersiveengineering:conveyor_basic"
+					count: 4L
+				}
+				{
+					id: "076781DCD68C4C07"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 8L
+				}
+				{
+					id: "06B9B718ABCB440F"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 6L
+				}
+				{
+					id: "13355A4F58E16277"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 4L
+				}
+				{
+					id: "558ECF30A80D9E07"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 2L
+				}
+				{
+					id: "1783A6DF4F1D05FF"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+			]
+			rewards: [{
+				id: "2C483CBFB6A802C7"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 2.5d
+			y: -3.0d
+			description: ["能用來製作紙。"]
+			dependencies: ["345D39CB5AE73A3F"]
+			id: "6EA8F25936E1F293"
+			tasks: [{
+				id: "00215F3EDD3A9368"
+				type: "item"
+				item: "immersiveengineering:dust_wood"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -3.0d
+			description: ["紙。"]
+			dependencies: ["6EA8F25936E1F293"]
+			id: "67D0F4FDC4CE350C"
+			tasks: [{
+				id: "59CA4541AED92568"
+				type: "item"
+				item: "minecraft:paper"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -3.5d
+			description: ["用來製作其他金屬沖壓模具。"]
+			dependencies: [
+				"67D0F4FDC4CE350C"
+				"23DC7D381BFF12AA"
+				"4A0A2E5DAF6C28DC"
+			]
+			id: "5AD2737939D42400"
+			tasks: [{
+				id: "08855E8DB81ED74A"
+				type: "item"
+				item: {
+					id: "immersiveengineering:blueprint"
+					Count: 1b
+					tag: {
+						blueprint: "molds"
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: -4.0d
+			description: ["製作染料的基底。"]
+			dependencies: ["6EA8F25936E1F293"]
+			id: "1C75502C51077E1B"
+			tasks: [{
+				id: "4CCDFA6519917A27"
+				type: "item"
+				item: "minecraft:lapis_lazuli"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -4.0d
+			description: ["水滴和染料基底可用來製作藍色染料。"]
+			dependencies: ["1C75502C51077E1B"]
+			id: "23DC7D381BFF12AA"
+			tasks: [{
+				id: "6466BCBA23AD3F3C"
+				type: "item"
+				item: "minecraft:blue_dye"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			description: ["右鍵安裝置鋸木機中。"]
+			dependencies: ["345D39CB5AE73A3F"]
+			id: "57003D86543FA1DE"
+			tasks: [{
+				id: "56007EFF18AA2C9F"
+				type: "item"
+				item: {
+					id: "immersiveengineering:sawblade"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: -5.0d
+			description: ["可用更便宜的配方製作機械零件。"]
+			dependencies: ["23DC7D381BFF12AA"]
+			id: "4F306A09D4FDBFC0"
+			tasks: [{
+				id: "3C3BFA4A57959AB4"
+				type: "item"
+				item: {
+					id: "immersiveengineering:blueprint"
+					Count: 1b
+					tag: {
+						blueprint: "components"
+					}
+				}
+				match_nbt: true
+			}]
+		}
+		{
+			x: -2.0d
+			y: -1.0d
+			dependencies: ["6E06EE61665B21F8"]
+			id: "23C467AC2DB1560F"
+			tasks: [{
+				id: "5905BE9A7BF61010"
+				type: "item"
+				item: "immersiveengineering:sheetmetal_steel"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -3.0d
+			dependencies: ["656BFB0D4E5B9256"]
+			id: "56B553DAF17765FD"
+			tasks: [{
+				id: "62A6A9DE729927F6"
+				type: "item"
+				item: "immersiveengineering:steel_scaffolding_standard"
+			}]
+			rewards: [{
+				id: "1C6190AFD97DE64D"
+				type: "item"
+				item: "immersiveengineering:steel_scaffolding_standard"
+				count: 10
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.0d
+			dependencies: [
+				"4BFF99B072F243B5"
+				"77026B03A595301F"
+			]
+			id: "2BE8EEF21A3B8D38"
+			tasks: [{
+				id: "5581FEC012034B0A"
+				type: "item"
+				item: "immersiveengineering:light_engineering"
+			}]
+			rewards: [{
+				id: "1FDE5B14A9E1D31B"
+				type: "item"
+				item: "immersiveengineering:light_engineering"
+				count: 8
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.0d
+			dependencies: ["77026B03A595301F"]
+			id: "4DB2D1F401BB9315"
+			tasks: [{
+				id: "0EC11F41CA2807B5"
+				type: "item"
+				item: "immersiveengineering:rs_engineering"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -1.5d
+			dependencies: ["4A0A2E5DAF6C28DC"]
+			id: "4BFF99B072F243B5"
+			tasks: [{
+				id: "29E4E0D4205285A3"
+				type: "item"
+				item: "immersiveengineering:component_iron"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.5d
+			dependencies: ["23C467AC2DB1560F"]
+			id: "65ACB33890D81139"
+			tasks: [{
+				id: "46295EED160AE489"
+				type: "item"
+				item: "immersiveengineering:heavy_engineering"
+			}]
+			rewards: [{
+				id: "094BFCAD302C707A"
+				type: "item"
+				item: "immersiveengineering:heavy_engineering"
+				count: 8
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.5d
+			id: "041F78612D133ED6"
+			tasks: [{
+				id: "311A1861397CA770"
+				type: "checkmark"
+				title: "是时候建造机器来减少负担"
+			}]
+		}
+		{
+			title: "電弧爐"
+			icon: "immersiveengineering:arc_furnace"
+			x: 2.5d
+			y: 4.5d
+			description: ["一個大型機器用來礦物倍化或製作新的物品。"]
+			id: "72B16CB3CAC223F4"
+			tasks: [
+				{
+					id: "68A59582741D04A0"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_steel"
+					count: 8L
+				}
+				{
+					id: "7C0FF5CEC8E40F23"
+					type: "item"
+					item: "mekanism:block_steel"
+					count: 6L
+				}
+				{
+					id: "478D9DC33DD02677"
+					type: "item"
+					item: "immersiveengineering:slab_sheetmetal_steel"
+					count: 14L
+				}
+				{
+					id: "4674F07C1C5688B4"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 5L
+				}
+				{
+					id: "1F7458DC559D7D4C"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 5L
+				}
+				{
+					id: "194FFAB2E7013208"
+					type: "item"
+					item: "minecraft:cauldron"
+				}
+				{
+					id: "58C62DFBD5831D95"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "217DBDFDEF5FC62F"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 10L
+				}
+				{
+					id: "00EC977826E928DC"
+					type: "item"
+					item: "immersiveengineering:blastbrick_reinforced"
+					count: 27L
+				}
+			]
+			rewards: [{
+				id: "575AF9956E71D917"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			title: "粉碎機"
+			icon: "immersiveengineering:crusher"
+			x: 5.5d
+			y: 4.5d
+			description: ["用來粉碎物品和方塊。也能將晶簇轉換成碎片。"]
+			id: "510FDFC8C6F830BB"
+			tasks: [
+				{
+					id: "7FEEB15CBD87A989"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 10L
+				}
+				{
+					id: "1ABD84EE846112C7"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 10L
+				}
+				{
+					id: "00A6BFEB2F8C7598"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "4BD667DB4F1F6A13"
+					type: "item"
+					item: "immersiveengineering:steel_fence"
+					count: 8L
+				}
+				{
+					id: "39289FA6E78E1291"
+					type: "item"
+					item: "minecraft:hopper"
+					count: 9L
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: 6.0d
+			description: ["用來製作加速版的高爐。將強化高爐磚放置成 3x3x3，並在中間上方放置漏斗。"]
+			id: "6ED010282BBFD76A"
+			tasks: [{
+				id: "5FFB844512C09830"
+				type: "item"
+				item: "immersiveengineering:blastbrick_reinforced"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 4.5d
+			description: ["用來加快高爐的運作速度。"]
+			dependencies: [
+				"6ED010282BBFD76A"
+				"6D085E8D891301D2"
+			]
+			id: "321F6D57DFC14BCC"
+			tasks: [{
+				id: "437F09DB0867A320"
+				type: "item"
+				item: "immersiveengineering:blastfurnace_preheater"
+			}]
+			rewards: [{
+				id: "62BDE7984985A59D"
+				type: "item"
+				item: "opolisutilities:b_bucks"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 3.0d
+			description: ["能提供熔爐熱源，使用 RF 取代燃料。"]
+			id: "6D085E8D891301D2"
+			tasks: [{
+				id: "77A534C61DE01A3B"
+				type: "item"
+				item: "immersiveengineering:furnace_heater"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 3.0d
+			dependencies: ["345D39CB5AE73A3F"]
+			id: "4C0BA6965794F867"
+			tasks: [{
+				id: "681BCBBF76F0F112"
+				type: "checkmark"
+				title: "无法使用？！ 能源"
+			}]
+		}
+	]
+	quest_links: [ ]
+}
